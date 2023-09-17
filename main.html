@@ -4,73 +4,33 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
-	<style>
-		table,th,td{
-			border:1px solid black ;
-			border-collapse:collapse
-			 
-		}
 
-		td,th{
-			text-align: center;
-            vertical-align: middle;
-			padding:10px;
-			
-		}
-	</style>
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
+	<header>
+		<h1>Feedback Form</h1>
+	</header>
 	<form method="post" action="YOUR_SERVER_URL">
-<table width="100%">
-	<thead>
-		<tr>
-		<th>Element</th>
-			<th>ID</th>
-			<th>Type</th>
-			<th>Attributes</th>
-			<th>Label Required</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Name </td>
-			<td>name</td>
-			<td>Text</td>
-			  <td>minlength="3",<br>maxlength="50",required</td>
-			<td>Yes</td>
-		</tr>
+		<label for="name">Name</label>
+		<input type="text" id="name" minlength="3" maxlength="50" required>
+		<br><br>
+		<label for="portfolio">Portfolio</label> 
+		<input type="url" id="portfolio"  required>
+<br><br>
+		<label for="favColor">Favorite Color</label> 
+		<input type="color" id="favColor" >
+		<br><br>
+	<label for="likeness">Likeness</label> 
+		<input type="range" id="likeness" min="1" max="100" >
 
-		<tr>
-			<td>Portfolio</td>
-			<td>portfolio</td>
-			<td>URL</td>
-			<td>required</td>
-			<td>yes</td>
-		</tr>
-
-		<tr>
-			<td>Favorite <br>Color</td>
-			<td>favColor</td>
-			<td>Color</td>
-			<td>N/A</td>
-			<td>Yes</td>
-		</tr>
-
-		<tr>
-			<td>Likeness</td>
-			<td>linkeness</td>
-			<td>Range</td>
-			<td>min="1",max="100"</td>
-			<td>Yes</td>
-		</tr>
-	</tbody>
+		<button type="submit">submit</button>
 		
-</table>
-		<input type="submit" value="Submit">
+		
+		
 	</form>
 </body>
 
